@@ -47,7 +47,6 @@ sessions -l
 sessions -i 2
 
 sysinfo
-getsystem 
-shell
-whoami
+getsystem
+hashdump
 ```
