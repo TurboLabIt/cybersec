@@ -20,7 +20,7 @@ apt update && apt install john -y
 
 fxTitle "Downloading wordlist from Kali..."
 ## https://www.kali.org/tools/wordlists/#wordlists
-mkdir /usr/share/wordlists/
+mkdir -p /usr/share/wordlists/
 cd /usr/share/wordlists/
 curl -o rockyou.txt.gz 'https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz?ref_type=heads&inline=false'
 gunzip rockyou.txt.gz
