@@ -28,11 +28,13 @@ fxTitle "Cloning john-jumbo src..."
 cd $HOME
 rm -rf john-jumbo
 git clone https://github.com/openwall/john -b bleeding-jumbo john-jumbo
-cd john-jumbo
+cd john-jumbo/src
 
 
 fxTitle "Compiling..."
 ./configure && make -s clean && make -sj4
+cd $HOME
+
 
 fxTitle "Moving..."
 rm -rf /usr/local/john-jumbo
