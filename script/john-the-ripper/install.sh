@@ -42,13 +42,8 @@ mv john-jumbo/run /usr/local/john-jumbo
 chmod u=rwx,go=rx /usr/local/john-jumbo -R
 rm -rf /tmp/john-jumbo
 
-
-fxTitle "Symlink..."
-rm -f /usr/local/bin/john
-ln -s /usr/local/john-jumbo/john /usr/local/bin/john
-
 fxTitle "Test..."
-john --test
+/usr/local/john-jumbo/john --test
 
 
 fxTitle "Downloading wordlists from Kali..."
