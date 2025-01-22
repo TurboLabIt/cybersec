@@ -21,11 +21,11 @@ apt remove --purge john -y
 
 fxTitle "Installing prerequisites..."
 apt update -qq
-apt install build-essential libssl-dev zlib1g-dev -y
+apt install build-essential libssl-dev zlib1g-dev libbz2 -y
 
 
 fxTitle "Cloning john-jumbo src..."
-cd $HOME
+cd /tmp
 rm -rf john-jumbo
 git clone https://github.com/openwall/john -b bleeding-jumbo john-jumbo
 cd john-jumbo/src
@@ -33,18 +33,19 @@ cd john-jumbo/src
 
 fxTitle "Compiling..."
 ./configure && make -s clean && make -sj4
-cd $HOME
+cd /tmp
 
 
 fxTitle "Moving..."
 rm -rf /usr/local/john-jumbo
-mv john-jumbo /usr/local/john-jumbo
+mv john-jumbo/run /usr/local/john-jumbo
 chmod u=rwx,go=rx /usr/local/john-jumbo -R
+rm -rf /tmp/john-jumbo
 
 
 fxTitle "Symlink..."
 rm -f /usr/local/bin/john
-ln -s /usr/local/john-jumbo/run/john /usr/local/bin/john
+ln -s /usr/local/john-jumbo/john /usr/local/bin/john
 
 fxTitle "Test..."
 john --test
