@@ -15,10 +15,40 @@ fi
 fxHeader "💿 JOHN THE RIPPER installer"
 rootCheck
 
-apt update && apt install john -y
+fxTitle "Remove the non-jumbo package..."
+apt remove --purge john -y
 
 
-fxTitle "Downloading wordlist from Kali..."
+fxTitle "Installing prerequisites..."
+apt update -qq
+apt install build-essential libssl-dev zlib1g-dev -y
+
+
+fxTitle "Cloning john-jumbo src..."
+cd $HOME
+rm -rf john-jumbo
+git clone https://github.com/openwall/john -b bleeding-jumbo john-jumbo
+cd john-jumbo
+
+
+fxTitle "Compiling..."
+./configure && make -s clean && make -sj4
+
+fxTitle "Moving..."
+rm -rf /usr/local/john-jumbo
+mv john-jumbo /usr/local/john-jumbo
+chmod u=rwx,go=rx /usr/local/john-jumbo -R
+
+
+fxTitle "Symlink..."
+rm -f /usr/local/bin/john
+ln -s /usr/local/john-jumbo/run/john /usr/local/bin/john
+
+fxTitle "Test..."
+john --test
+
+
+fxTitle "Downloading wordlists from Kali..."
 ## https://www.kali.org/tools/wordlists/#wordlists
 mkdir -p /usr/share/wordlists/
 cd /usr/share/wordlists/
