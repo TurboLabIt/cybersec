@@ -95,5 +95,6 @@ sudo aircrack-ng -a 2 -b <access-point-mac-address> -w /usr/share/wordlists/rock
 
 ````shell
 aircrack-ng -J wpa-handshake.hccap wifi-capture.cap
-hashcat -m 2500 wpa-handshake.hccap /usr/share/wordlists/rockyou.txt
+/hccap2hccapx.bin wpa-handshake.hccap wpa-handshake.hccapx
+hashcat -m 2500 wpa-handshake.hccapx /usr/share/wordlists/rockyou.txt
 ````
