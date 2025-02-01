@@ -1,4 +1,9 @@
-[TryHackMe Blue room](https://tryhackme.com/r/room/blue) | [YouTube Walkthrough](https://www.youtube.com/watch?v=32W6Y8fVFzg)
+📚 [TryHackMe Blue room](https://tryhackme.com/r/room/blue) | [YouTube Walkthrough](https://www.youtube.com/watch?v=32W6Y8fVFzg)
+
+
+## sample data
+
+[data/windows-hashdump.txt](https://github.com/TurboLabIt/cybersec/tree/main/data)
 
 
 ## setup
