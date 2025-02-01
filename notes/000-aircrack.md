@@ -68,7 +68,7 @@ sudo airodump-ng wlan0
 Capture:
 
 ````shell
-sudo airodump-ng -c <network-channel-number> --bssid <access-point-mac-address> -w output-file capture.txt wlan0
+sudo airodump-ng -c <network-channel-number> --bssid <access-point-mac-address> -w output-file wifi-capture.cap wlan0
 
 ````
 
@@ -86,6 +86,6 @@ As soon as the `WPA handshake` is captured, you can stop.
 ## crack
 
 ````shell
-sudo aircrack-ng -a 2 -b <access-point-mac-address> -w /usr/share/wordlists/rockyou.txt capture.txt
+sudo aircrack-ng -a 2 -b <access-point-mac-address> -w /usr/share/wordlists/rockyou.txt *.cap
 
 ````
