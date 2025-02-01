@@ -1,4 +1,4 @@
-[Wifi Hacking 101](https://tryhackme.com/r/room/wifihacking101?ref=blog.tryhackme.com) | [Tutorial: How to Crack WPA/WPA2](https://aircrack-ng.org/doku.php?id=cracking_wpa)
+[Wifi Hacking 101](https://tryhackme.com/r/room/wifihacking101?ref=blog.tryhackme.com) | [Airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng)
 
 
 ## setup
@@ -7,6 +7,13 @@
 
 
 ## network interfaces
+
+````shell
+sudo airmon-ng
+
+````
+
+Alternative:
 
 ````shell
 iw dev
@@ -22,16 +29,19 @@ it is directed to the device or not.
 It passively captures all network traffic within range for analysis without joining a network.
 
 ````shell
-sudo ip link set dev wlan0 down
-sudo iw dev wlan0 set type monitor
-sudo ip link set dev wlan0 up
+sudo airmon-ng check kill
+sudo airmon-ng start wlan0
 
 ````
+
+The interface name in monitor mode is `wlan0mon`.
 
 Alternative:
 
 ````shell
-sudo airmon-ng start wlan0
+sudo ip link set dev wlan0 down
+sudo iw dev wlan0 set type monitor
+sudo ip link set dev wlan0 up
 
 ````
 
