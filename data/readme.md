@@ -12,4 +12,6 @@ curl --output-dir ${HOME} -O https://raw.githubusercontent.com/TurboLabIt/cybers
 
 A Windows account dump. Crack it with [notes/john-the-ripper-windows-password.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/john-the-ripper-windows-password.md)
 
-````curl --output-dir ${HOME} -O https://raw.githubusercontent.com/TurboLabIt/cybersec/refs/heads/main/data/windows-hashdump.txt````
+````shell
+curl --output-dir ${HOME} -O https://raw.githubusercontent.com/TurboLabIt/cybersec/refs/heads/main/data/windows-hashdump.txt
+````
