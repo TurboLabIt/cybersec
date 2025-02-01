@@ -1,9 +1,13 @@
 [Wifi Hacking 101](https://tryhackme.com/r/room/wifihacking101?ref=blog.tryhackme.com) | [Airmon-ng](https://www.aircrack-ng.org/doku.php?id=airmon-ng)
 
+## sample data
+
+[data/wifi-capture.zip](https://github.com/TurboLabIt/cybersec/tree/main/data)
+
 
 ## setup
 
-1. [Install Aircrack-ng](https://github.com/TurboLabIt/cybersec/blob/main/script/aircrack/install.sh)
+[Install Aircrack-ng](https://github.com/TurboLabIt/cybersec/blob/main/script/aircrack/install.sh)
 
 
 ## network interfaces
@@ -93,8 +97,4 @@ sudo aircrack-ng -a 2 -b <access-point-mac-address> -w /usr/share/wordlists/rock
 
 ## crack with hashcat
 
-````shell
-aircrack-ng -J wpa-handshake.hccap wifi-capture.cap
-/hccap2hccapx.bin wpa-handshake.hccap wpa-handshake.hccapx
-hashcat -m 2500 wpa-handshake.hccapx /usr/share/wordlists/rockyou.txt
-````
+[notes/hashcat-wifi.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/hashcat-wifi.md)
