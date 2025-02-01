@@ -17,6 +17,11 @@ fi
 fxHeader "💿 AIRCRACK-NG installer"
 rootCheck
 
-sudo apt update && sudo apt install aircrack-ng -y
+fxTitle "Installing prerequisites..."
+apt update -qq
+#apt install build-essential libssl-dev zlib1g-dev libbz2 curl -y
+apt install curl -y
 
-fxEndFooter
+apt install aircrack-ng -y
+
+curl -s https://raw.githubusercontent.com/TurboLabIt/cybersec/master/script/wordlist/install.sh | bash
