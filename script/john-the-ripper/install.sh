@@ -21,7 +21,7 @@ apt remove --purge john -y
 
 fxTitle "Installing prerequisites..."
 apt update -qq
-apt install build-essential libssl-dev zlib1g-dev libbz2 -y
+apt install build-essential libssl-dev zlib1g-dev libbz2 curl -y
 
 
 fxTitle "Cloning john-jumbo src..."
@@ -46,12 +46,4 @@ fxTitle "Test..."
 /usr/local/john-jumbo/john --test
 
 
-fxTitle "Downloading wordlists from Kali..."
-## https://www.kali.org/tools/wordlists/#wordlists
-mkdir -p /usr/share/wordlists/
-cd /usr/share/wordlists/
-curl -o rockyou.txt.gz 'https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz?ref_type=heads&inline=false'
-gunzip rockyou.txt.gz
-
-
-fxEndFooter
+curl -s https://raw.githubusercontent.com/TurboLabIt/cybersec/master/script/wordlist/install.sh | sudo bash
