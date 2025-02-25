@@ -25,6 +25,7 @@ cd /usr/share/wordlists/
 
 fxTitle "Downloading rockyou from Kali..."
 ## https://www.kali.org/tools/wordlists/#wordlists
+rm -f rockyou.txt
 curl -o rockyou.txt.gz 'https://gitlab.com/kalilinux/packages/wordlists/-/raw/kali/master/rockyou.txt.gz?ref_type=heads&inline=false'
 gunzip rockyou.txt.gz
 
