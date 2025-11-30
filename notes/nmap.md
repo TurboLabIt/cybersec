@@ -8,10 +8,10 @@ sudo apt install curl -y && curl -s https://raw.githubusercontent.com/TurboLabIt
 
 ## port scan
 
-`zznmap` ([source](https://github.com/TurboLabIt/zzalias/blob/master/zzalias.sh))
+`zznmap <target>` ([source](https://github.com/TurboLabIt/zzalias/blob/master/zzalias.sh))
 
 ```shell
-sudo nmap -sS -Pn -A -p- -v
+sudo nmap -sS -Pn -A -p- -v <target>
 ```
 
 - `-sS`: TCP SYN scan
@@ -25,7 +25,7 @@ sudo nmap -sS -Pn -A -p- -v
 
 Scan a target  for all vulnerabilities in the default script library for the vuln category
 
-`zzvuln` ([source](https://github.com/TurboLabIt/zzalias/blob/master/zzalias.sh))
+`zzvuln <target>` ([source](https://github.com/TurboLabIt/zzalias/blob/master/zzalias.sh))
 
 ```shell
 sudo nmap --script vuln -v
