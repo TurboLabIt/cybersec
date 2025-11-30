@@ -1,6 +1,6 @@
 ## capture the WPA handshake
 
-[notes/000-aircrack.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/000-aircrack.md)
+[notes/aircrack.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/aircrack.md)
 
 
 ## setup
@@ -12,13 +12,11 @@
 
 ````shell
 hcxpcapngtool -o handshake.22000 wifi-capture.cap
-
 ````
 
 These warnings are "normal":
 
-> Warning: out of sequence timestamps!
-> 
+> Warning: out of sequence timestamps!  
 > Warning: out of sequence timestamps!
 
 
@@ -26,5 +24,4 @@ These warnings are "normal":
 
 ````shell
 hashcat -m 22000 handshake.22000 /usr/share/wordlists/rockyou.txt
-
 ````

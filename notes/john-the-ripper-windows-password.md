@@ -1,4 +1,4 @@
-📚 [TryHackMe Blue room](https://tryhackme.com/r/room/blue) | [YouTube Walkthrough](https://www.youtube.com/watch?v=32W6Y8fVFzg)
+📚 [John the Ripper: Beginner’s Tutorial and Review](https://www.esecurityplanet.com/products/john-the-ripper/)
 
 
 ## sample data

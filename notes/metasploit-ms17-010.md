@@ -3,13 +3,13 @@
 
 ## setup
 
-1. [Install nmap](https://github.com/TurboLabIt/cybersec/blob/main/notes/000-nmap.md)
+1. [Install nmap](https://github.com/TurboLabIt/cybersec/blob/main/notes/nmap.md)
 2. [Install metasploit](https://github.com/TurboLabIt/cybersec/blob/main/script/metasploit/install.sh)
 
 
 ## recon
 
-[nmap scan, nmap vuln](https://github.com/TurboLabIt/cybersec/blob/main/notes/000-nmap.md)
+[nmap scan, nmap vuln](https://github.com/TurboLabIt/cybersec/blob/main/notes/nmap.md)
 
 
 ## exploit info
