@@ -1,6 +1,6 @@
 📚 [Linux CLI - Shells Bells](https://tryhackme.com/room/linuxcli-aoc2025-o1fpqkvxti)
 
-> For those who consider themselves intermediate and want another challenge, check McSkidy's hidden note in `/home/mcskidy/Documents/` to get access to the key for **Side Quest 1**! Accessible through our [Side Quest Hub](https://tryhackme.com/adventofcyber25/sidequest)!
+> For those who consider themselves intermediate and want another challenge, check McSkidy's hidden note in `/home/mcskidy/Documents/` to get access to the key for **Side Quest 1**!
 
 
 ## brief
@@ -312,4 +312,4 @@ This late in the game, it's likely that the text shown in image is actually the 
 
 From Discord I understood that the next step is NOT "How SOC-mas became EAST-mas: Hopper's Origins" ([thm-aoc2025-side-quest-00.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/thm-aoc2025-side-quest-00.md)), but:
 
-➡ "The Great Disappearing Act" ([thm-aoc2025-side-quest-01a.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/thm-aoc2025-side-quest-01a.md))
+➡ "The Great Disappearing Act" ([thm-aoc2025-side-quest-01b.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/thm-aoc2025-side-quest-01b.md))
