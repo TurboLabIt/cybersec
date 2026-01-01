@@ -1,7 +1,8 @@
 ## free materials
 
 - Blog: [Free Offensive Security Training](https://tryhackme.com/resources/blog/free-offensive-security-training)
-
+- Blog: [Preparing for a Junior Penetration Tester Interview](https://tryhackme.com/resources/blog/jr-pentester-interview-guide)
+- Blog: [How to Become a Penetration Tester](https://tryhackme.com/resources/blog/how-to-become-a-penetration-tester)
 
 ## fundamentals
 
@@ -12,10 +13,13 @@
 
 ## Web Application Red Teaming
 
-1. [Junior Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
-2. [Web App Pentesting](https://tryhackme.com/path/outline/webapppentesting)
-3. [Web Application Red Teaming](https://tryhackme.com/path/outline/webappredteaming)
-4. [Red Teaming](https://tryhackme.com/path/outline/redteaming)
+
+1. [CompTIA Pentest+](https://tryhackme.com/path/outline/pentestplus)
+2. [Junior Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
+3. [Web App Pentesting](https://tryhackme.com/path/outline/webapppentesting)
+4. [Web Application Red Teaming](https://tryhackme.com/path/outline/webappredteaming)
+5. [Red Teaming](https://tryhackme.com/path/outline/redteaming)
+6. [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
 
 🎓 [Jr. Penentration Tester (PT1) certification](https://tryhackme.com/certification/junior-penetration-tester)
 
