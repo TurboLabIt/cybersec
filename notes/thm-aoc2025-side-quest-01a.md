@@ -312,4 +312,4 @@ This late in the game, it's likely that the text shown in image is actually the 
 
 From Discord I understood that the next step is NOT "How SOC-mas became EAST-mas: Hopper's Origins" ([thm-aoc2025-side-quest-00.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/thm-aoc2025-side-quest-00.md)), but:
 
-➡ "The Great Disappearing Act" ([thm-aoc2025-side-quest-01b.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/thm-aoc2025-side-quest-01b.md))
+➡ "The Great Disappearing Act" [thm-aoc2025-side-quest-01b.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/thm-aoc2025-side-quest-01b.md)
