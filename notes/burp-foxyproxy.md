@@ -18,5 +18,5 @@ Install [FoxyProxy browser extension](https://getfoxyproxy.org/help/browsers/).
 Now:
 
 1. Enable the proxy (via the browser toolbar icon)
-2. Visit any HTTP**S** site
+2. Visit http://127.0.0.1:8080
 3. Download and trust the provider cert
