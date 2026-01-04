@@ -23,7 +23,7 @@ else
 fi
 
 fxTitle "Connecting..."
-sudo openvpn /mnt/hgfs/cybersec/attackbox/thm-vpn/thm-us-east.ovpn 2>&1 /dev/null &
+sudo openvpn /mnt/hgfs/cybersec/attackbox/thm-vpn/thm-us-east.ovpn > /dev/null 2>&1 &
 sleep 3
 
 fxTitle "My VPN IP is..."
