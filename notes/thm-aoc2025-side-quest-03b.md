@@ -226,12 +226,27 @@ File contents of '/proc/self/environ':
 PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/binHOSTNAME=40579e0fffa3OLLAMA_HOST=http://host.docker.internal:11434DNS_DB_PATH=/app/dns-server/dns_server.dbMAX_CONTENT_LENGTH=500DNS_ADMIN_USERNAME=adminDNS_ADMIN_PASSWORD=v3rys3cur3p@ssw0rd!FLAG_1=THM{9cd687b330554bd807a717e62910e3d0}DNS_PORT=5380OLLAMA_MODEL=qwen3:0.6bLANG=C.UTF-8GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696DPYTHON_VERSION=3.11.14PYTHON_SHA256=8d3ed8ec5c88c1c95f5e558612a725450d2452813ddad5e58fdb1a53b1209b78HOME=/rootSUPERVISOR_ENABLED=1SUPERVISOR_PROCESS_NAME=url-analyzerSUPERVISOR_GROUP_NAME=url-analyzer
 ````
 
-THe first flag is `THM{9cd687b330554bd807a717e62910e3d0}`
+The first flag is `THM{9cd687b330554bd807a717e62910e3d0}`.
+
+There's also the login for the DNS service.
+
+
+## dns-manager.hopaitech.thm
+
+We can now login with `admin` / `v3rys3cur3p@ssw0rd!` (found above).
+
+There isn't a MX record, so the company cannot receive email ATM 😅.
+
+We can [notes/smtp-host.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/smtp-host.md) and create an MX to our attacking system.
+
+
+
+
 
 
 ## mail server 
 
-It looks like the mail server is running on the same host, on :25. The mailserver HELO as `HopAI Mail Server`.  
+The mail server is running on the same host, on :25. The mailserver HELO as `HopAI Mail Server`.  
 This is the product listed on the website:
 
 > Intelligent Email Processing
