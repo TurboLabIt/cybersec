@@ -4,6 +4,7 @@
 - Blog: [Preparing for a Junior Penetration Tester Interview](https://tryhackme.com/resources/blog/jr-pentester-interview-guide)
 - Blog: [How to Become a Penetration Tester](https://tryhackme.com/resources/blog/how-to-become-a-penetration-tester)
 
+
 ## fundamentals
 
 1. [Pre Security](https://tryhackme.com/path/outline/presecurity)
@@ -13,7 +14,6 @@
 
 ## Web Application Red Teaming
 
-
 1. [CompTIA Pentest+](https://tryhackme.com/path/outline/pentestplus)
 2. [Junior Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
 3. [Web App Pentesting](https://tryhackme.com/path/outline/webapppentesting)
@@ -22,6 +22,11 @@
 6. [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
 
 🎓 [Jr. Penentration Tester (PT1) certification](https://tryhackme.com/certification/junior-penetration-tester)
+
+
+## Other stuff
+
+1. [Recent Threats](https://tryhackme.com/module/recent-threats)
 
 
 ## Side quests AoC 2025
