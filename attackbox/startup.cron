@@ -1,0 +1,3 @@
+MAILTO=""
+@reboot root sleep 7 && sudo mount-shared-folders > /var/log/zzstatup.log 2>&1
+@reboot kali sleep 15 && bash /mnt/hgfs/cybersec/attackbox/startup.sh >> /var/log/zzstatup.log 2>&1
