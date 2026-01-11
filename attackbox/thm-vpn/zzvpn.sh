@@ -6,7 +6,6 @@ if [ ! -f "/usr/local/turbolab.it/bash-fx/bash-fx.sh" ]; then curl -s https://ra
 source /usr/local/turbolab.it/bash-fx/bash-fx.sh
 ## bash-fx is ready
 
-clear
 fxHeader "zzvpn"
 
 
