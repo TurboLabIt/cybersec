@@ -1,4 +1,4 @@
-📚 [TryHackMe Mustacchio](https://tryhackme.com/room/mustacchio) | [YouTube Walkthrough]()
+📚 [TryHackMe Mustacchio](https://tryhackme.com/room/mustacchio)
 
 
 ## setup
