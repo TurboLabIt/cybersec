@@ -77,7 +77,6 @@ PORT      STATE SERVICE VERSION
 - **80**: Werkzeug httpd 3.0.2 (Python 3.10.12)
 - **5000**: Werkzeug httpd 3.0.2 (Python 3.10.12)
 - **11434**: 11434/tcp open  http    Golang net/http server
-- 
 
 The main application at http://10.67.184.17 shows a chatbot.
 
