@@ -16,10 +16,10 @@
 $ zznmap 10.67.184.17
 
 ...
-Discovered open port 80/tcp on 10.67.184.17
-Discovered open port 22/tcp on 10.67.184.17
-Discovered open port 5000/tcp on 10.67.184.17
-Discovered open port 11434/tcp on 10.67.184.17
+Discovered open port 80/tcp
+Discovered open port 22/tcp
+Discovered open port 5000/tcp
+Discovered open port 11434/tcp
 
 PORT      STATE SERVICE VERSION
 22/tcp    open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.13 (Ubuntu Linux; protocol 2.0)
