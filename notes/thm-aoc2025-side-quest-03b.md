@@ -407,8 +407,9 @@ Connection to hopaitech.thm closed.
 
 That's because it's a tunnel-only connection (it was mentioned in the ticket) -- see [notes/ssh-connect-close.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/ssh-connect-close.md).
 
-From the other ticket we know the company is running **Ollama** (standard port: `11434`).  
-To query Ollama, we could run: `curl http://...:11434/api/tags`.
+From the other ticket we know the company is running **Ollama** (standard port: `11434`).
+
+See: [notes/ollama-ai.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/ollama-ai.md):
 
 Let's check if it's running on the server directly:
 
