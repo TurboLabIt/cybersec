@@ -1,4 +1,4 @@
-📚 [TryHackMe Neighbour (Authentication Anywhere)](https://tryhackme.com/room/corridor)
+📚 [TryHackMe Corridor (Authentication Anywhere)](https://tryhackme.com/room/corridor)
 
 the brief states "IDOR vulnerabilities", so the flaw must be an IDOR.
 
@@ -15,7 +15,6 @@ The door on the left have these URLs:
 - http://10.64.145.188/a87ff679a2f3e71d9181a67b7542122c
 - http://10.64.145.188/e4da3b7fbbce2345d7772b0674a318d5
 - http://10.64.145.188/1679091c5a880faf6fb5e6087eb1b2dc
-
 
 There's nothing useful in the HTML.
 
