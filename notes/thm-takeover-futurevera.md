@@ -19,7 +19,6 @@
 
 The HTTPS cert is self-signed+expired. Common Name: `futurevera.thm`.
 
-
 The website has some listable folder:
 
 - https://futurevera.thm/css/ 
@@ -38,7 +37,7 @@ The brief mentions:
 Let's try to also map:
 
 ````
-sudo nano /etc/hosts
+$ sudo nano /etc/hosts
 
 10.65.176.228   futurevera.thm support.futurevera.thm help.futurevera.thm ticket.futurevera.thm
 ````
@@ -46,13 +45,7 @@ sudo nano /etc/hosts
 https://support.futurevera.thm exits. 
 
 The HTTPS cert is self-signed+expired. Common Name: `support.futurevera.thm`, DNS Name
-`secrethelpdesk934752.support.futurevera.thm`
-
-It has the same listable folders:
-
-- https://support.futurevera.thm/css/
-- https://support.futurevera.thm/js/
-- https://support.futurevera.thm/assets/
+`secrethelpdesk934752.support.futurevera.thm`.
 
 
 ## secrethelpdesk934752.support.futurevera.thm
@@ -69,6 +62,7 @@ http://secrethelpdesk934752.support.futurevera.thm works, but it does a strange 
 
 ````shell
 $ curl http://secrethelpdesk934752.support.futurevera.thm --head
+
 HTTP/1.1 302 Found
 Location: http://flag{beea0d6edfcee06a59b83fb50ae81b2f}.s3-website-us-west-3.amazonaws.com/
 ````
