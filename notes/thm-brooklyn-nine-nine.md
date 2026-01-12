@@ -68,5 +68,19 @@ The source has this hint:
 [notes/image-steganography.md](https://github.com/TurboLabIt/cybersec/blob/main/notes/image-steganography.md)
 
 ````shell
+$ stegseek brooklyn99.jpg /usr/share/wordlists/rockyou.txt
 
+[i] Found passphrase: "admin"
+[i] Original filename: "note.txt".
+[i] Extracting to "brooklyn99.jpg.out".
 ````
+
+The extracted file contains this message:
+
+> Holts Password:
+> fluffydog12@ninenine
+> Enjoy!!
+
+note: [in the show, the name of the character is](https://en.wikipedia.org/wiki/Brooklyn_Nine-Nine)
+*Captain Raymond **Holt***. So the message should be "Holt's Password" --> the username is likely `holt`.
+

@@ -61,3 +61,16 @@ Use it:
 ````shell
 zsteg -a image.png
 ````
+
+
+## stegseek
+
+````shell
+$ stegseek data/image-with-seghide.jpg /usr/share/wordlists/rockyou.txt
+
+StegSeek 0.6 - https://github.com/RickdeJager/StegSeek
+
+[i] Found passphrase: "admin"
+[i] Original filename: "note.txt".
+[i] Extracting to "data/image-with-seghide.jpg.out".
+```
