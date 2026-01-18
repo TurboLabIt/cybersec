@@ -2,6 +2,7 @@
 
 - 📚 [Cyber Kill Chain](https://tryhackme.com/room/cyberkillchainzmt)
 - [MITRE ATT&CK](https://attack.mitre.org/techniques/enterprise/)
+- [Lockheed Martin](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html)
 
 1. **Reconnaissance**: passive (OSINT)/active, online/offline
 2. **Weaponization**: dev|buy malware/exploit, setup C2 
