@@ -2,7 +2,6 @@
 
 ```shell
 sudo apt install curl -y && curl -s https://raw.githubusercontent.com/TurboLabIt/zzalias/master/setup.sh | sudo bash ; source /usr/local/bin/zzalias
-
 ```
 
 
@@ -33,3 +32,14 @@ sudo nmap --script vuln -v
 
 📝 Certain scans attempt to verify a vulnerability by attempting to exploit the vulnerability. 
 In some cases, a successful exploitation will result in changes to the service.
+
+
+## rustscan
+
+- 📚 [Docs](https://github.com/bee-san/RustScan/wiki/Usage)
+
+> By default, RustScan scans 3000 ports per second.
+
+```shell
+rustscan --ulimit 70000 -a <target1>,<target2> -p 22,80,443 
+```
