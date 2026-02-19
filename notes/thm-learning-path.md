@@ -11,6 +11,8 @@
 2. [Cyber Security 101](https://tryhackme.com/path/outline/cybersecurity101) 
 3. [Web Fundamentals](https://tryhackme.com/path/outline/web)
 
+🎓 [Cyber Security 101 (SEC1) certification](https://tryhackme.com/certification/cyber-security-101)
+
 
 ## Web Application Red Teaming
 
