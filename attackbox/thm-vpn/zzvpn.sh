@@ -22,9 +22,13 @@ else
 fi
 
 fxTitle "Connecting..."
-sudo openvpn /mnt/hgfs/cybersec/attackbox/thm-vpn/thm-us-east.ovpn > /dev/null 2>&1 &
+sudo openvpn /mnt/hgfs/cybersec/attackbox/thm-vpn/thm-eu-central-2026.ovpn > /dev/null 2>&1 &
 sleep 3
 
 fxTitle "My VPN IP is..."
+echo -n "tun0: "
 ip -o -4 addr show tun0 | awk '{print $4}' | cut -d/ -f1
+
+echo -n "tun1: "
+ip -o -4 addr show tun1 | awk '{print $4}' | cut -d/ -f1
 echo ""
