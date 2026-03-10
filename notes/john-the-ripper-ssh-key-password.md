@@ -3,7 +3,8 @@
 
 ## sample data
 
-[data/linux-ssh-key](https://github.com/TurboLabIt/cybersec/tree/main/data)
+- [data/linux-ssh-key](https://github.com/TurboLabIt/cybersec/tree/main/data)
+- [data/linux-ssh-key-2](https://github.com/TurboLabIt/cybersec/tree/main/data)
 
 
 ## setup
